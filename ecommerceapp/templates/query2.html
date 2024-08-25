@@ -1,0 +1,41 @@
+
+{% extends 'admin_base.html' %}
+{% block main  %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query2</title>
+</head>
+<body>
+    
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="p-2" style="border-bottom: 2px solid orange;">Weekly Orders analysis for the first quarter of 2024</h5>
+            <div class="container-fluid">
+    <table border="1">
+<div class="card shadow">
+    <div class="card-body">
+        
+            <div class="container-fluid">
+            <table class="table table-bordered table-sm" id="example"> </h5>
+                <thead>
+                    <tr>
+                        <th>Week Number</th>
+                        <th>Total Orders</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for week, count in weekly_orders %}
+                    <tr>
+                        <td>Week {{ week }}</td>
+                        <td>{{ count }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

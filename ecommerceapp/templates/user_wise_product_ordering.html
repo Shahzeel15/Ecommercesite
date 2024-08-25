@@ -1,0 +1,20 @@
+
+  <h1>User Wise Product Ordering</h1>
+  <table>
+    <tr>
+      <th>User</th>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Total Value</th>
+    </tr>
+    {% for user, products in user_wise_product_ordering.items %}
+      {% for product, details in products.items %}
+        <tr>
+          <td>{{ user }}</td>
+          <td>{{ product }}</td>
+          <td>{{ details.quantity }}</td>
+          <td>{{ details.total_value }}</td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </table>

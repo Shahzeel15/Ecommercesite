@@ -1,0 +1,36 @@
+<!-- templates/product_summary.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Summary</title>
+</head>
+<body>
+    <h1>Product Summary for Q1 2024</h1>
+
+    <h2>Products Sold More Than 7 Times</h2>
+    <ul>
+        {% if products_sold_above_threshold %}
+            {% for product_id, quantity in products_sold_above_threshold.items %}
+                <li>Product ID: {{ product_id }}, Quantity Sold: {{ quantity }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No products sold more than 7 times.</li>
+        {% endif %}
+    </ul>
+
+    <h2>Products Not Sold Yet</h2>
+    <ul>
+        {% if unsold_products %}
+            {% for product_id in unsold_products %}
+                <li>Product ID: {{ product_id }}</li>
+            {% endfor %}
+        {% else %}
+            <li>All products have been sold.</li>
+        {% endif %}
+    </ul>
+
+</body>
+</html>

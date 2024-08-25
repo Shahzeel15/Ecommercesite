@@ -1,0 +1,22 @@
+<table class="table table-bordered table-sm" id="example">
+    <thead>
+    <tr>
+    <th>User</th>
+    <th>Product</th>
+    <th>Total Quantity</th>
+    <th>Total Value</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for user, products in user_product_data.items %}
+        {% for product_name, data in products.items %}
+        <tr>
+            <td>{{ user }}</td>
+            <td>{{ product_name }}</td>
+            <td>{{ data.quantity }}</td>
+            <td>{{ data.total_value }}</td>
+        </tr>
+        {% endfor %}
+    {% endfor %}
+    </tbody>
+</table>

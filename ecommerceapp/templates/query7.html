@@ -1,0 +1,40 @@
+{% extends 'admin_base.html' %}
+{% block main  %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query4</title>
+</head>
+<body>
+   
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="p-2" style="border-bottom: 2px solid orange;">Find the products that are sold more than 7 times or have not sold yet in the first quarter of 2024</h5>
+            <div class="container-fluid">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Order Count</th>
+                <th>Total Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product_id, data in summary.items %}
+            <tr>
+                <td>{{ product_id }}</td>
+                <td>{{ data.name }}</td>
+                <td>{{ data.order_count }}</td>
+                <td>{{ data.total_quantity }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No products found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+{% endblock %}

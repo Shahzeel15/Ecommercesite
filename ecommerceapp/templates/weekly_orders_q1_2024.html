@@ -1,0 +1,39 @@
+<!-- myapp/templates/weekly_orders_q1_2024.html -->
+{% extends 'admin_base.html' %}
+{% block main  %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Orders Analysis for Q1 2024</title>
+</head>
+<body>
+    <h1>Weekly Orders Analysis for Q1 2024</h1>
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="p-2" style="border-bottom: 2px solid orange;">Weekly Orders analysis for the first quarter of 2024</h5>
+            <div class="container-fluid">
+    <table border="1">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Week Starting</th>
+                <th>Total Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking.week_number }}</td>
+                    <td>{{ booking.total_orders }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No data available</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div></div></div>
+</body>
+</html>
+{% endblock %}

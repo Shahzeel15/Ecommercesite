@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Sales Report</title>
+</head>
+<body>
+    <h1>Product Sales Report for Q1 2024</h1>
+
+    <h2>Products Sold More Than 7 Times</h2>
+    <ul>
+        {% for product_id, qty in sold_more_than_7.items %}
+            <li>Product ID: {{ product_id }} - Quantity Sold: {{ qty }}</li>
+        {% empty %}
+            <li>No products sold more than 7 times.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Products Not Sold Yet</h2>
+    <ul>
+        {% for product_id in not_sold_yet %}
+            <li>Product ID: {{ product_id }}</li>
+        {% empty %}
+            <li>All products have been sold.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

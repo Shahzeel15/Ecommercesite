@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Product Order Report</title>
+</head>
+<body>
+    <h1>User Product Order Report</h1>
+    {% if user_product_data %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Total Quantity</th>
+                    <th>Total Value</th>
+                    <th>User Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product_id, product_data in user_product_data.items %}
+                <tr>
+                    <td>{{ product_data.product_name }}</td>
+                    <td>{{ product_data.quantity }}</td>
+                    <td>{{ product_data.total_value }}</td>
+                    <td>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                    <th>Quantity</th>
+                                    <th>Total Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user_id, user_data in product_data.users.items %}
+                                <tr>
+                                    <td>{{ user_id }}</td>
+                                    <td>{{ user_data.quantity }}</td>
+                                    <td>{{ user_data.total_value }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No orders found.</p>
+    {% endif %}
+</body>
+</html>

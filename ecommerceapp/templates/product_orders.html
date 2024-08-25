@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Orders</title>
+</head>
+<body>
+    <h1>Product Orders</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Total Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prod_id, quantity in aggregated_data.items %}
+                <tr>
+                    <td>{{ prod_id }}</td>
+                    <td>{{ quantity }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">No orders found</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
