@@ -10,12 +10,16 @@ The website also includes an administrative interface that allows administrators
     password : admin
 
 <h4>User password</h4>
-
 user1 := <br>
+username:szeel1694@gmail.com<br>
+password: 1234 <br>
+
+
+user2 := <br>
 username:nidhi@gmail.com<br>
 password: nidhi <br>
 
-user 2 := <br>
+user 3 := <br>
 username : palak@gmail.com<br>
 password : palak <br>
 
