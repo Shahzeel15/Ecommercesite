@@ -35,10 +35,8 @@ password : palak <br>
 <h2>Pages and Features</h2>
  <li><b>User Login and Admin Login</b>: Secure login pages for users to access their accounts and administrators to manage site operations.</li> <li><b>User Signup</b>: Registration page for new users to create an account with necessary details.</li> <li><b>Product Viewing and Filtering</b>: Users can browse products, apply filters by category, and view detailed product information.</li> <li><b>Shopping Cart Management</b>: Users can add or remove items from their cart and proceed to checkout.</li> <li><b>Profile Management</b>: Users can update their personal information and profile image.</li> <li><b>Password Management</b>: Users can change their passwords for improved security.</li> <li><b>Order History</b>: Users can view their past orders, track their status, and review order details.</li> <li><b>Order Tracking</b>: Users can track the status of their current orders in real time.</li> <li><b>Admin Dashboard</b>: A comprehensive dashboard for administrators to view and analyze data from all tables with various perspectives.</li> <li><b>Category Management</b>: Admins can add, update, or delete product categories.</li> <li><b>Product Management</b>: Admins can add, update, or delete products from the inventory.</li> <li><b>Order Management</b>: Admins can analyze different order statuses, manage orders, and change their statuses as needed.</li> <li><b>Order Details</b>: Admins can view detailed information about each order and track its status.</li> <li><b>User Management</b>: Admins can manage user accounts, including the ability to delete users.</li> <li><b>Admin Password Management</b>: Admins can change their passwords to ensure account security.</li> 
 
-<h2>Query : </h2>
-<li><b>query : 1</b> Find User wise - product-wise ordering quantity with total item value</li>
-![image alt](https://github.com/Shahzeel15/Ecommercesite/blob/73ef74fca846b3649e954eacf531e16dfa43a315/query1.png)
-
-<li><b>query : 2</b>Weekly Orders analysis for the first quarter of 2024</li>
-<li><b>query : 3</b>Retrieve the Product name and No. of Orders from Sales. Exclude products with fewer than 5 Orders</li>
+<h2>Task : 2 </h2>
+<li><b>query : 1 </b> Find User wise - product-wise ordering quantity with total item value</li>
+<li><b>query : 2 </b>Weekly Orders analysis for the first quarter of 2024</li>
+<li><b>query : 3 </b>Retrieve the Product name and No. of Orders from Sales. Exclude products with fewer than 5 Orders</li>
 <li><b>query : 4 </b>Find the products that are sold more than 7 times or have not sold yet in the first quarter of 2024</li>
