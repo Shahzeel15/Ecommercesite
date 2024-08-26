@@ -37,6 +37,8 @@ password : palak <br>
 
 <h2>Query : </h2>
 <li><b>query : 1</b> Find User wise - product-wise ordering quantity with total item value</li>
+![image alt](https://github.com/Shahzeel15/Ecommercesite/blob/73ef74fca846b3649e954eacf531e16dfa43a315/query1.png)
+
 <li><b>query : 2</b>Weekly Orders analysis for the first quarter of 2024</li>
 <li><b>query : 3</b>Retrieve the Product name and No. of Orders from Sales. Exclude products with fewer than 5 Orders</li>
 <li><b>query : 4 </b>Find the products that are sold more than 7 times or have not sold yet in the first quarter of 2024</li>
